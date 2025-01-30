@@ -10,10 +10,10 @@ header {
 
 .logo {
     max-width: 100px;
-    left: 150px;
+    margin-left: 80px;
 }
 
-nav ul {
+nav ul{
     list-style-type: none;
     display: flex;
     padding: 0; 
@@ -21,7 +21,9 @@ nav ul {
     margin-left: 800px;
     text-decoration: none;
 }
-
+nav a{
+    text-decoration: none;
+}
 nav li {
     padding: 10px;
     justify-content: center;
@@ -37,10 +39,10 @@ nav li {
     border: 1px solid black;
     margin-right: 150px;
 }
-img {
+.fonfoto {
     max-width: 100%;
-    height: auto;
-    position: absolute;
+
+    position: relative;
 }
 .text{
     z-index: 100;
@@ -72,6 +74,9 @@ img {
 }
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    flex-direction: column;
+    transform: scale(100%);
+    height: 100%;
 }
 button{
     z-index: 100;
@@ -86,4 +91,60 @@ button{
     background-color: rgb(255, 255, 255);
     padding: 10px 20px;
     font-weight: bold;
+}
+html{
+    overflow: scroll;
+
+}
+.pink{
+    margin-top: -80px;
+    height: 100px ;
+    width: 500px;
+    position: relative;
+}
+
+.card-container {
+    display: flex; /* Используем Flexbox для расположения карточек в строку */
+    flex-wrap: wrap; /* Позволяем карточкам переноситься на новую строку */
+    justify-content: space-between; /* Равномерное распределение карточек */
+    gap: 20px; /* Отступы между карточками */
+    padding: 70px; /* Отступы вокруг контейнера */
+}
+
+.product {
+    position: relative; /* Устанавливаем относительное позиционирование для родительского контейнера */
+    width: calc(25% - 20px); /* Ширина карточки, чтобы вместить 4 карточки в строку с отступами */
+    overflow: hidden; /* Скрываем переполнение */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для карточки */
+}
+
+.fhoto1 {
+    width: 100%; /* Ширина изображения 100% от родителя */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+
+.price {
+    position: absolute; /* Абсолютное позиционирование для наложения текста */
+    bottom: 0; /* Прижимаем к нижней части контейнера */
+    left: 0; /* Прижимаем к левой части контейнера */
+    right: 0; /* Прижимаем к правой части контейнера */
+    color: #fff; /* Цвет текста */
+    padding: 10px; /* Отступы вокруг текста */
+    text-align: center; /* Центрируем текст */
+}
+
+.product h2 {
+    margin: 10px 0;
+}
+
+.product h5 {
+    margin: 5px 0;
+}
+
+.product a {
+    display: inline-block; 
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
 }
