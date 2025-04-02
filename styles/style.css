@@ -93,7 +93,6 @@ body{
     font-weight: bold;
 }
 html, body {
-    overflow-x: hidden;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -208,7 +207,8 @@ h1{
 .pop{
     margin-right: 200px;
     color: #615E5C;
-    margin-top: -20px;
+    margin-top: -30px;
+    margin-left: 670px;
 }
 .pop1{
     font-size: 11px;
@@ -305,25 +305,48 @@ h1{
     font-size: 30px;
     font-weight: bold;
     color: #1B365D;
-    margin:  100px 0px 0px 220px;
+    margin:  100px 0px 0px 123px;
+}
+.fff1{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    margin:  100px 0px 0px 123px;
 }
 .ggg{    
     position: absolute;
     font-size: 16px;
     color: #434140;
-    margin:  150px 900px 0px 220px;
+    margin:  150px 900px 0px 123px;
+}
+.ggg5{
+    position: absolute;
+    font-size: 16px;
+    color: #ffffff;
+    margin:  150px 224px 0px 123px;
 }
 .www{
     position: absolute;
     font-size: 16px;
     color: #434140;
-    margin:  250px 900px 0px 220px;
+    margin:  250px 900px 0px 123px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.www1{
+    position: absolute;
+    font-size: 16px;
+    color: #ffffff;
+    margin:  250px 0px 0px 123px;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
 }
 .fgw{
-    color: #FFFFFF;    margin-top: -500px;
+    color: #FFFFFF;    
+    margin-top: -500px;
     margin-left: 700px;
     margin-right: -650px;
 }
@@ -453,8 +476,7 @@ footer{
 }
 .foot{
 
-    display: flex; /* Используем Flexbox */
-    margin-top: 40px; 
+    display: flex;
 }
 .logo2{
     height: 70px;
@@ -462,21 +484,21 @@ footer{
     margin: 50px 200px 50px 50px;
 }
 .menu {
-    display: flex; /* Используем Flexbox для меню */
+    display: flex;
 }
 
 .menu ul {
-    list-style: none; /* Убираем маркеры списка */
-    margin: 0 60px; /* Отступы между списками */
-    padding: 0; /* Убираем внутренние отступы */
+    list-style: none;
+    margin: 0 60px;
+    padding: 0;
 }
 
 .menu li {
-    margin: 20px 0; /* Отступы между элементами списка */
+    margin: 20px 0;
 }
 
 .menu a {
-    text-decoration: none; /* Убираем подчеркивание */
+    text-decoration: none;
     color: #DADBDD;
 }
 .but1{
@@ -513,4 +535,18 @@ footer{
 .p2{
     margin: 20px 323px 0px 448px;
     color: #9CA5B0;
+}
+.colonsh2{
+    color: #1B365D;
+    margin-top: 0px;
+}
+.colonsa{
+    text-decoration: none;
+}
+.section{
+    background-color: #D0E7EA;
+}
+.posl{
+    margin-left: 60px; 
+    color: #DADBDD;
 }
