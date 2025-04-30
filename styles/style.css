@@ -166,7 +166,7 @@ html, body {
     font-size: 40px;
     font-weight: bold;
     left: 100px;
-    top: 1770px;
+    margin-top: -46px;
     margin-right: 700px;
 }
 .fhotka{
@@ -194,7 +194,7 @@ html, body {
     margin-top: 10px; 
     color: #0088cc; 
 }
-.aaa{
+.uiop{
     height: 700px;
     margin-left: 70px;
     float: left;
@@ -387,7 +387,7 @@ h1{
 }
 
 .cards {
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     top: 20px;
