@@ -241,3 +241,33 @@ const cards = {
     // Инициализируем слайдер при загрузке
     initSlider();
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const authButton = document.getElementById('authButton');
+    const modalOverlay = document.getElementById('modalOverlay');
+    const okButton = document.getElementById('okButton');
+    const cancelButton = document.getElementById('cancelButton');
+
+    // Открытие модалки
+    authButton.addEventListener('click', function() {
+        modalOverlay.style.display = 'block';
+        document.body.classList.add('modal-open');
+    });
+
+    // Закрытие модалки
+    function closeModal() {
+        modalOverlay.style.display = 'none';
+        document.body.classList.remove('modal-open');
+    }
+
+    // Закрытие по кнопкам
+    okButton.addEventListener('click', closeModal);
+    cancelButton.addEventListener('click', closeModal);
+
+    // Закрытие по клику вне формы
+    modalOverlay.addEventListener('click', function(e) {
+        if (e.target === modalOverlay) {
+            closeModal();
+        }
+    });
+});
