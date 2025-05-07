@@ -271,3 +271,29 @@ const cards = {
         }
     });
 });
+
+
+window.addEventListener('DOMContentLoaded', () => {
+  const preloader = document.querySelector('.preloader');
+  
+  // Центрирование прелоадера при любом положении скролла
+  const updatePosition = () => {
+      const scrollY = window.scrollY || window.pageYOffset;
+      preloader.style.top = `${scrollY}px`;
+      preloader.style.height = `${window.innerHeight}px`;
+  };
+
+  // Обновляем позицию при скролле (на случай появления прелоадера после прокрутки)
+  window.addEventListener('scroll', updatePosition);
+  updatePosition(); // Инициализация позиции
+
+  setTimeout(() => {
+      preloader.style.opacity = '0';
+      
+      setTimeout(() => {
+          preloader.remove();
+          document.body.classList.add('loaded');
+          window.removeEventListener('scroll', updatePosition);
+      }, 400);
+  }, 1500);
+});
